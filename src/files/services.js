@@ -1,6 +1,6 @@
 const services = {
     "description": "Services we provide",
-    "list": [
+    "treatments": [
         {
             "number": 0,
             "treatment": "Haircut, long hair",
