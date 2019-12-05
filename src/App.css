@@ -9,7 +9,7 @@ body {
 }
 
 .Header {
-  max-width: 100vw;
+  min-width: 100vw;
   margin: auto;
 }
 
@@ -37,4 +37,55 @@ body {
 .menu-basket {
   font-size: 2rem;
   margin-left: auto;
+}
+
+.background {
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/********* Home *********/
+.p1 {
+  background-image: url(./images/background-p1.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.home {
+  min-height: 40vh;
+}
+
+.services {
+  min-height: 40vh;
+}
+
+.home p, .services p {
+  font-size: 1.2rem;
+}
+/********* Services *********/
+.p2 {
+  background-image: url(./images/background-p2.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/********* Footer *********/
+.Footer {
+  min-height: 100vh;
+  background-color: #362E27;
+  color: #CCB596;
+}
+
+.Footer h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.Footer p {
+  padding: 0 1rem;
 }
