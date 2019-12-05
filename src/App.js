@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
 import { FaShoppingBasket, FaBars } from 'react-icons/fa'
+import Services from './components/Services'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -33,16 +35,9 @@ const App = () => {
           <h2>Services</h2>
         </section>
 
-        <section className='text services'>
-          <p>We can offer these services</p>
-        </section>
+        <Services />
 
-        <section className='Footer'>
-            <h2>Get in touch with us!</h2>
-            <p><b>Phone number:</b> +1-602-555-0162</p>
-            <p><b>Mail address:</b> post@tinasaloon.com</p>
-            <p><b>Address:</b> 1374 Boone Crocket Lane, Armadillo</p>
-        </section>
+        <Footer />
 
       </section>
     </div>

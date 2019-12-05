@@ -59,14 +59,20 @@ body {
   min-height: 40vh;
 }
 
-.services {
-  min-height: 40vh;
-}
+
 
 .home p, .services p {
   font-size: 1.2rem;
 }
 /********* Services *********/
+.services {
+  min-height: 40vh;
+}
+
+.services h3 {
+  text-align: center;
+}
+
 .p2 {
   background-image: url(./images/background-p2.jpeg);
   display: flex;
@@ -74,9 +80,14 @@ body {
   align-items: center;
   color: white;
 }
+
+.treatment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 /********* Footer *********/
 .Footer {
-  min-height: 100vh;
+  min-height: 130vh;
   background-color: #362E27;
   color: #CCB596;
 }
@@ -88,4 +99,26 @@ body {
 
 .Footer p {
   padding: 0 1rem;
+}
+
+/* Workers */
+.employees {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.employee {
+  margin: 1rem 2rem;
+}
+
+.employee img {
+  max-width: 100%;
+  border-radius: 50%;
+  height: auto;
+}
+
+.employee h3 {
+  text-align: center;
+  
 }
