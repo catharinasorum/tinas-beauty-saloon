@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import { FaShoppingBasket, FaBars } from 'react-icons/fa'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <section className='Header'>
+        <nav className='Menu'>
+          < FaBars className='menu-bar'/>
+          <h1 className='header-link'>Tina's Beauty Saloon</h1>
+          < FaShoppingBasket className='menu-basket'/>
+        </nav>
+      </section>
     </div>
   );
 }
