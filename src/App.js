@@ -3,6 +3,7 @@ import './App.css'
 import { FaShoppingBasket, FaBars } from 'react-icons/fa'
 import Services from './components/Services'
 import Footer from './components/Footer'
+import Basket from './components/Basket'
 
 
 const App = () => {
@@ -15,6 +16,8 @@ const App = () => {
           < FaShoppingBasket className='menu-basket'/>
         </nav>
       </section>
+
+      <Basket />
       
       <section className='Main'>
         <section className='background p1'>

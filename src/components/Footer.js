@@ -6,7 +6,7 @@ import employeeFiles from '../files/employeeFiles'
 
 const Footer = () => {
     
-    const [employees, setEmployees] = useState(employeeFiles.persons)
+    const [employees] = useState(employeeFiles.persons)
 
     return (
         <section className='Footer'>

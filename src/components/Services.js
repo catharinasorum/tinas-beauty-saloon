@@ -21,7 +21,7 @@ const Services = (props) => {
           <div className='treatments'>
               {
                   treatments.map(
-                      (treatment, i) => <ServicesSub treatment={treatment.treatment} number={treatment.number} price={treatment.price} />
+                      (treatment, i) => <ServicesSub treatment={treatment.treatment}  key={i} number={treatment.number} price={treatment.price} />
                   )
               }
           </div>
