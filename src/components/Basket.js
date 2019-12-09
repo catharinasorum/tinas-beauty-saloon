@@ -11,7 +11,7 @@ const Basket = (props) => {
     }
 
     const exitBasket = () => {
-        console.log("Hello")
+        console.log("Lukke")
     }
     return (
         <div className='basket'>

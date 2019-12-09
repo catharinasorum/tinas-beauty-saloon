@@ -36,8 +36,10 @@ body {
 }
 
 .menu-basket {
+  position: relative;
   font-size: 2rem;
   margin-left: auto;
+  z-index: 100;
 }
 
 .background {
@@ -141,6 +143,7 @@ body {
   background-color: #AF9F86;
   box-shadow: black;
   animation: falldown 1s linear;
+  opacity: 0.5%;
 }
 
 .basket h2 {

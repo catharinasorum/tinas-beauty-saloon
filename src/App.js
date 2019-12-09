@@ -7,13 +7,18 @@ import Basket from './components/Basket'
 
 
 const App = (props) => {
+
+  const openBasket = (evt) => {
+    console.log("Åpne")
+}
+
   return (
     <div className='App'>
       <section className='Header'>
         <nav className='Menu'>
           < FaBars className='menu-bar'/>
           <h1 className='header-link'>Tina's Beauty Saloon</h1>
-          < FaShoppingBasket className='menu-basket'/>
+          < FaShoppingBasket className='menu-basket' onClick={openBasket}/>
         </nav>
       </section>
 
