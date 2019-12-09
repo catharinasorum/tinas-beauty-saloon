@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import services from '../files/services'
-import ServiceSub from './ServicesSub'
 import { FaTimes } from 'react-icons/fa'
 
 const Basket = (props) => {
 
     const [orderedTreatments, setOrderedTreatments] = useState([services.treatments])
   
-    const addToBasket = (treatment) => {
-        setOrderedTreatments([...orderedTreatments, treatment])
+    const addToBasket = (treatmentName) => {
+        setOrderedTreatments([...orderedTreatments, treatmentName])
     }
 
     const exitBasket = () => {
@@ -21,8 +20,8 @@ const Basket = (props) => {
             <div className='basketContent'>
                 {
                     orderedTreatments.map( (orderedTreatment, i) => 
-                    <p>
-                        <ServiceSub key={i} treatment={orderedTreatment.treatment} />
+                    <p key={i}>
+                        <span>{props.treatment}</span>
                         <span className='btnRemove'></span>
                     </p> )
                 }
