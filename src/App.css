@@ -140,6 +140,7 @@ body {
   height: 40vh;
   background-color: #AF9F86;
   box-shadow: black;
+  animation: falldown 1s linear;
 }
 
 .basket h2 {
@@ -150,4 +151,16 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+/* Basket animasjon */
+@keyframes falldown {
+  from {
+    top: -500px;
+    right: -500px;
+  }
+  to {
+    top: 20px;
+    right: 10px;
+  }
 }

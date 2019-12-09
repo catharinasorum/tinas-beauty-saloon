@@ -4,9 +4,20 @@ import services from '../files/services'
 import ServicesSub from './ServicesSub'
 
 const Services = (props) => {
-    
+
     const [treatments, setTreatments] = useState(services.treatments)
-    
+    const [addTreatments, setAddTreatments] = useState('')
+
+    const removeTreatment = (i) => {
+        const copy = [...treatments]
+        copy.splice(i, 1)
+        setTreatments(copy)
+    }
+
+    const addTreatment = (evt) => {
+        console.log(evt.target.value)
+    }
+
     const filterTreatments = (evt) => {
         setTreatments (
             services.treatments.filter( treatment => treatment.treatment.toLowerCase().includes(evt.target.value) )
@@ -21,7 +32,7 @@ const Services = (props) => {
           <div className='treatments'>
               {
                   treatments.map(
-                      (treatment, i) => <ServicesSub treatment={treatment.treatment}  key={i} number={treatment.number} price={treatment.price} />
+                      (treatment, i) => <ServicesSub treatment={treatment.treatment}  key={i} number={treatment.number} price={treatment.price}/>
                   )
               }
           </div>
