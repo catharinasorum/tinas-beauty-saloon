@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import Basket from './components/Basket'
 
 
-const App = () => {
+const App = (props) => {
   return (
     <div className='App'>
       <section className='Header'>

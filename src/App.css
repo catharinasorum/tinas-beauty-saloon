@@ -82,7 +82,7 @@ body {
   color: white;
 }
 
-.treatment {
+.treatmentList {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
