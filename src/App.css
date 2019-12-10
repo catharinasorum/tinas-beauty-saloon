@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+@import url("https://use.typekit.net/vgy0ntq.css");
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,19 +17,20 @@ body {
 .Header {
   min-width: 100vw;
   margin: auto;
-  position: fixed;
+  /*position: fixed;*/
 }
 
 .Menu {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.3rem 2rem;
   background-color: #362E27;
   color: #CCB596;
 }
 
 .Menu h1 {
   font-size: 2rem;
+  font-family: drunk-cowboy, sans-serif;
 }
 
 .header-link {
@@ -43,34 +50,44 @@ body {
 }
 
 .background {
-  min-height: 50vh;
+  min-height: 60vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-/********* Home *********/
-.p1 {
-  background-image: url(./images/background-p1.jpeg);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
 
-.home {
+.background > h2 {
+  text-shadow: 0.05rem 0.05rem #000;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 50rem) minmax(1.5rem, 1fr);
+  padding: 4rem 0;
+  font-family: 'Montserrat', sans-serif;
   min-height: 40vh;
 }
 
+.text > * {
+  grid-column: 2 / -2;
+}
+
+/********* Home *********/
+.p1 {
+  background-image: url(./images/background-p1.jpeg);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
 
 
 .home p, .services p {
   font-size: 1.2rem;
 }
 /********* Services *********/
-.services {
-  min-height: 40vh;
-}
 
 .services h3 {
   text-align: center;
@@ -78,10 +95,7 @@ body {
 
 .p2 {
   background-image: url(./images/background-p2.jpeg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .treatmentList {
@@ -90,9 +104,11 @@ body {
 }
 
 
-.inpTreatment { /* trenger mer styling*/
-  min-width: 30rem;
+.inpTreatment { 
+  min-width: 25rem;
   outline: none;
+  padding: 1rem;
+  border-radius: 10px;
 }
 /********* Footer *********/
 .Footer {
@@ -165,5 +181,11 @@ body {
   to {
     top: 20px;
     right: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Menu h1 {
+    font-size: 3rem;
   }
 }
