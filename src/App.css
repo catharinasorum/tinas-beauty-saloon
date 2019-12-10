@@ -23,19 +23,13 @@ body {
 }
 
 .Header h1 {
-  font-size: 2rem;
   font-family: drunk-cowboy, sans-serif;
   text-align: center;
-}
-
-.Menu {
-  display: flex;
-  align-items: center;
-  padding: 0.3rem 2rem;
+  font-size: 2.5rem;
 }
 
 .background {
-  min-height: 60vh;
+  min-height: 70vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -74,13 +68,10 @@ body {
 }
 
 /********* Services *********/
-.services h3 {
-  text-align: center;
-}
+
 
 .p2 {
   background-image: url(./images/background-p2.jpeg);
-  font-family: 'Montserrat', sans-serif;
 }
 
 .treatmentList {
@@ -88,13 +79,34 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-
 .inpTreatment { 
-  min-width: 25rem;
+  max-width: 47rem;
   outline: none;
   padding: 1rem;
   border-radius: 10px;
 }
+
+/* Workers */
+.employees {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.employee {
+  margin: 1rem 2rem;
+}
+
+.employee img {
+  max-width: 90%;
+  border-radius: 50%;
+  height: auto;
+}
+
+.employee h3 {
+  text-align: center;
+}
+
 /********* Footer *********/
 .Footer {
   min-height: 130vh;
@@ -111,53 +123,12 @@ body {
   padding: 0 1rem;
 }
 
-/* Workers */
-.employees {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.employee {
-  margin: 1rem 2rem;
-}
-
-.employee img {
-  max-width: 100%;
-  border-radius: 50%;
-  height: auto;
-}
-
-.employee h3 {
-  text-align: center;
-}
-
-/****** Basket *****/
-.basket {
-  z-index: 20;
-  position: fixed;
-  top: 20px;
-  right: 10px;
-  width: 40vw;
-  height: 40vh;
-  background-color: #AF9F86;
-  box-shadow: black;
-  animation: falldown 1s linear;
-  opacity: 0.5%;
-}
-
-.basket h2 {
-  text-align: center;
-}
-
-.x {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
 @media only screen and (min-width: 600px) {
-  .Menu h1 {
+  .Header h1 {
     font-size: 3rem;
   }
+  .services {
+    grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 40rem) minmax(1.5rem, 1fr);
+  }
+
 }
