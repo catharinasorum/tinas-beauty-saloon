@@ -1,31 +1,19 @@
 import React from 'react'
 import './App.css'
-import { FaShoppingBasket, FaBars } from 'react-icons/fa'
 import Services from './components/Services'
 import Footer from './components/Footer'
-import Basket from './components/Basket'
 
 
 const App = (props) => {
 
-  const openBasket = (evt) => {
-    console.log("Åpne")
-}
-
   return (
     <div className='App'>
       <section className='Header'>
-        <nav className='Menu'>
-          < FaBars className='menu-bar'/>
-          <h1 className='header-link'>Tina's Beauty Saloon</h1>
-          < FaShoppingBasket className='menu-basket' onClick={openBasket}/>
-        </nav>
+        <h1>Tina's Beauty Saloon</h1>
       </section>
-
-      <Basket />
       
       <section className='Main'>
-        <section className='background p1'>
+        <section className='background p1' >
           <h2>VOTED BEST HAIR SALON IN ARMADILLO</h2>
         </section>
 

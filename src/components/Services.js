@@ -6,17 +6,6 @@ import ServicesSub from './ServicesSub'
 const Services = (props) => {
 
     const [treatments, setTreatments] = useState(services.treatments)
-    const [addTreatments, setAddTreatments] = useState('')
-
-    const removeTreatment = (i) => {
-        const copy = [...treatments]
-        copy.splice(i, 1)
-        setTreatments(copy)
-    }
-
-    const addTreatment = (evt) => {
-        console.log(evt.target.value)
-    }
 
     const filterTreatments = (evt) => {
         setTreatments (
@@ -27,12 +16,11 @@ const Services = (props) => {
     return (
         <section className='text services'>
           <h3>We can offer these services</h3>
-          <p>Click on the treatments that you want to order.</p>
           <input type='text' className='inpTreatment' placeholder='Search through all our services' onInput={filterTreatments}/>
           <div className='treatments'>
               {
                   treatments.map(
-                      (treatment, i) => <ServicesSub treatment={treatment.treatment}  key={i} number={treatment.number} price={treatment.price}/>
+                      (treatment, i) => <ServicesSub treatment={treatment.treatment}  key={i} number={i} price={treatment.price}/>
                   )
               }
           </div>

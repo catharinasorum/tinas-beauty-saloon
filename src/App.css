@@ -12,41 +12,26 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: #362E27;
 }
 
 .Header {
   min-width: 100vw;
   margin: auto;
-  /*position: fixed;*/
+  background-color: #362E27;
+  color: #CCB596;
+}
+
+.Header h1 {
+  font-size: 2rem;
+  font-family: drunk-cowboy, sans-serif;
+  text-align: center;
 }
 
 .Menu {
   display: flex;
   align-items: center;
   padding: 0.3rem 2rem;
-  background-color: #362E27;
-  color: #CCB596;
-}
-
-.Menu h1 {
-  font-size: 2rem;
-  font-family: drunk-cowboy, sans-serif;
-}
-
-.header-link {
-  padding: 1rem;
-}
-
-.menu-bar {
-  font-size: 2rem;
-  margin-right: auto;
-}
-
-.menu-basket {
-  position: relative;
-  font-size: 2rem;
-  margin-left: auto;
-  z-index: 100;
 }
 
 .background {
@@ -65,6 +50,7 @@ body {
 }
 
 .text {
+  background-color: white;
   display: grid;
   grid-template-columns: minmax(1.5rem, 1fr) minmax(0, 50rem) minmax(1.5rem, 1fr);
   padding: 4rem 0;
@@ -83,12 +69,11 @@ body {
   text-align: center;
 }
 
-
 .home p, .services p {
   font-size: 1.2rem;
 }
-/********* Services *********/
 
+/********* Services *********/
 .services h3 {
   text-align: center;
 }
@@ -145,7 +130,6 @@ body {
 
 .employee h3 {
   text-align: center;
-  
 }
 
 /****** Basket *****/
@@ -170,18 +154,6 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-}
-
-/* Basket animasjon */
-@keyframes falldown {
-  from {
-    top: -500px;
-    right: -500px;
-  }
-  to {
-    top: 20px;
-    right: 10px;
-  }
 }
 
 @media only screen and (min-width: 600px) {
