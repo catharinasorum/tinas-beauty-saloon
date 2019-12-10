@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import '../App.css'
-import '../files/employeeFiles'
 import FooterEmployees from './FooterEmployees'
 import employeeFiles from '../files/employeeFiles'
 
